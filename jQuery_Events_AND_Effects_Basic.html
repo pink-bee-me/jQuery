@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <head>
+
+        <head>
+            <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        </head>
+
+        <script>
+
+        function choice() {
+                        
+
+
+
+            $("document").ready(function () {
+                $("html").append(
+                    "<body>\
+                <h1>Pick A Number...ANY Number!!!</h1>\
+                    <h3>See If You Can Pick The Winning Number</h3>\
+                        <button id='button1' onclick='choice(this.id);'> 03 </button>\
+                        <button id='button2' onclick='choice(this.id);'> 53 </button>\
+                        <button id='button3' onclick='choice(this.id);'> 92 </button>\
+                        <button id-'button4' onclick='choice(this.id);'> 12 </button>\
+                        <button id='button5' onclick='choice(this.id);'> 26 </button>\
+            </body>"
+                )},
+
+                $("button").on(
+                        "mouseover",function () { 
+                            $("body").css("background-color", "lime");
+                        }),
+
+                $("button").on(
+                        "click",function () {
+                            var clicked = this.id;
+                            var response_Alert = "Ummmm,... Really???? Number " + clicked.val() +
+                            " ???... Well, THAT wasn't a very good pick. Is Your Picker Broken???...Wait A Minute...Are You Crying??? Hey!!! Nobody Said This Game Was Going To Be Fun ... So Suck It Up!!!!!";
+
+                            $("body").css("background-color", "orchid");
+
+                   
+                            switch (clicked) {
+
+                            case 'button1':
+                                alert(response_Alert);
+                                break;
+
+                            case 'button2':
+                                alert(response_Alert);
+                                break;
+
+                            case 'button3':
+                                alert(response_Alert);
+                                break;
+
+                            case 'button4':
+                                alert(response_Alert);
+                                break;
+
+                            case 'button5':
+                                alert(response_Alert);
+                                break;
+
+                            default:
+                                alert('You Need To Pick A Number...Duh!!! Have A Nice Day !!!');
+                        }
+                    } ))}  
+             </script>
+    </html>
